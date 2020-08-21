@@ -1,5 +1,6 @@
 # vue-inject
-##响应式的provide和inject
+
+## 响应式的provide和inject
 
 ```
   由于vue原生的inject和provide是不可响应式的,为了使子组件能更方便的使用父组件的变量,
@@ -11,7 +12,7 @@
 npm install vue-inject
 ```
 
-##使用
+## 使用
 
   #### 1.简单使用
 
@@ -95,9 +96,10 @@ npm install vue-inject
 ```
   import provider from "vue-inject";
   Vue.use(provider("someFlagKey"));
-
 ```
-同时该方式会在vue的全生命周期中引入eventBus,并在父子组件中,兄弟组件中互通消息.
+
+同时该方式会在vue的全生命周期中引入eventBus,并在父子组件中,兄弟组件中互通消息.$provide及$inject中的使用方式不变.
+
 ```
 export default {
   mounted:{
