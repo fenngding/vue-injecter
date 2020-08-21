@@ -1,6 +1,6 @@
 {
   "name": "vue-injecter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "inject parent component's variable and methods into the specified children",
   "main": "index.js",
   "scripts": {
