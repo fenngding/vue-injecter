@@ -1,0 +1,17 @@
+{
+  "name": "vue-inject",
+  "version": "1.0.0",
+  "description": "inject parent component's variable and methods into the specified children",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "inject",
+    "provide",
+    "provider"
+  ],
+  "author": "fenngding",
+  "license": "ISC"
+}
