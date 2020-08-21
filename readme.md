@@ -1,6 +1,6 @@
-# vue-inject
+# vue-injecter
 
-## 响应式的provide和inject
+## 提供响应式的provide和inject
 
 ```
   由于vue原生的inject和provide是不可响应式的,为了使子组件能更方便的使用父组件的变量,
@@ -9,7 +9,7 @@
 ## 安装
 
 ```
-npm install vue-inject
+npm install --save vue-injecter
 ```
 
 ## 使用
@@ -24,7 +24,7 @@ npm install vue-inject
       </div>
     </template>
     <script>
-    import {$provide} from "vue-inject"
+    import {$provide} from "vue-injecter"
     export default {
       name:"parent",
       components:{},
@@ -64,7 +64,7 @@ npm install vue-inject
     </div>
   </template>
   <script>
-  import {$inject} from "vue-inject"
+  import {$inject} from "vue-injecter"
   export default {
     name:"child",
     components:{},
@@ -94,7 +94,7 @@ npm install vue-inject
 由于该小工具的实现方式是组合了多个vue的特性,故默认了一个flagkey为`$_$`,特定的字符串是为了保证不会  和vue组件中的属性或方法重名;可以在main.js中自定义该特征值如下:
 
 ```
-  import provider from "vue-inject";
+  import provider from "vue-injecter";
   Vue.use(provider("someFlagKey"));
 ```
 
