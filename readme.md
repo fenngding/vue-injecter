@@ -1,9 +1,9 @@
-# vue-injecter
+# vue-injecter : 提供响应式的provide和inject
 
-## 提供响应式的provide和inject
+## 说明
 
 ```
-  由于vue原生的inject和provide是不可响应式的,为了使子组件能更方便的使用父组件的变量,
+  由于vue原生的inject和provide是不支持响应式的,为了使子组件及多层嵌套的组件能更方便的使用父组件的变量,
   或者把父组件作为存放点,在子组件间共享使用属性及方法,故将一些hack方式的注入抽象为一个工具库.
 ```
 ## 安装
@@ -13,7 +13,7 @@ npm install --save vue-injecter
 ```
 
 ## 使用
-
+支持vue2.2.0及以后的版本(vue3.0不支持)
 
   ```
     // 父组件中:
